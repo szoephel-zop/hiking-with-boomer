@@ -54,6 +54,9 @@ nav a {
     color: white;
     font-weight: bold;
 }
+nav a:hover {
+  color: #f9b874; 
+}
 main {
     width: 90%;
     max-width: 1100px;
@@ -64,6 +67,7 @@ main {
     width: 100%;
     height: 300px;
     object-fit: cover;
+    object-position: 50% 55%; 
     display: block;
 }
 .hero-text {
@@ -82,6 +86,13 @@ main {
     text-decoration: none;
     border-radius: 5px;
     border-radius: 6px;
+}
+
+.gear-hero img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 .about {
     text-align: center;
@@ -155,9 +166,28 @@ tr:nth-of-type(even) {
 .contact-title {
   text-align: center;
 }
+.contact-break {
+  text-align: center;
+  margin: 30px 0;
+}
+.contact-break img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.contact-break p {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #355c4b;
+}
 form {
   max-width: 500px;
   margin: 2em auto;
+  margin-top 20px;
 }
 input, select, textarea {
   width: 100%;
@@ -171,6 +201,20 @@ input[type="submit"] {
   padding: 10px;
   cursor: pointer;
 }
+.video-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 2em auto;
+    max-width: 800px;
+}
+.video-row video {
+    width: 200px;
+    border-radius: 8px;
+}
+.video-text {
+    text-align: left;
+}
 footer {
     background-color: #355c4b;
     color: white;
@@ -179,4 +223,7 @@ footer {
 }
 footer a {
     color: white;
+}
+footer a:hover {
+    color: #f9b874;
 }
